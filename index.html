@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grocery List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="stylesheet" href="otherStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+<body>
+    <div id="mainContainer">
+        <div class="container" id="input">
+            <!-- Input Tasks -->
+            <h1 id='titleText'>GROCERY LIST</h1>
+            <!-- input style  -->
+            <label class="field field_v2">
+                <input id = "inputTask" class="field__input" placeholder="e.g. buy milk">
+            </label>
+            <br>
+            <button id='createBtn' class='button1'>ENTER</button>
+            <button id= 'clearBtn'class='button1'>CLEAR</button>
+        </div>
+        <div class="container" id="output">
+            <!-- Output Tasks -->
+            <div id = "taskListDiv">
+                <!-- tasks will be appended here -->
+            </div>
+            
+            <div id="instructions">
+                <hr id="horizontal-line">
+                <h1 class="instrucText">Instructions:</h1>
+                <h2 class="instrucText">One Click: Mark Task Complete</h2>
+                <h2 class="instrucText">Double Click: Delete Task</h2>
+            </div>
+
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
